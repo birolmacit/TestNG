@@ -1,4 +1,4 @@
-package day16_notations;
+package tests.day16_notations;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -39,7 +39,7 @@ WebDriver driver ;
         driver .get("https://www.ramazon1.com");
     }
 
-    @Test (dependsOnMethods = "test01")
+    @Test (dependsOnMethods = "test01", priority = 1)
     public void test02() {
 //nutella aratalım
        WebElement aramakutusu=  driver .findElement(By.id("twotabsearchtextbox"));

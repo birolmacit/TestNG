@@ -16,6 +16,7 @@ public abstract class TestBase {
 
     @BeforeMethod //JUNIT DEKİ BEFORE İLE AYNI MANTIKTA CALISIR
     public void setUp(){
+
         WebDriverManager .chromedriver() .setup() ;
         driver =new ChromeDriver() ;
         driver .manage() .window() .maximize() ;
