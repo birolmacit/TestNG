@@ -16,6 +16,8 @@ public class Driver {
     ayarların yapılması ve en sonunda drıver in kapatılması tercıh edılmıstır
     */
 
+
+   private  Driver(){}
    static  WebDriver driver;
 
 

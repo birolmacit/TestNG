@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen packagelari calıstırma">
+    <test name="paketler">
+
+        <packages>
+            <package name="tests.day17_POM"></package>
+            <package name="tests.day19_smokeTest"></package>
+        </packages>
+    </test>
+
+
+</suite>
