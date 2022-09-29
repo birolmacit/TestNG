@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen methodlar">
+
+    <!-- bir class da tum test methodları calısacaksa bunun ıcın direk class secmek yeterlidir method secmemızın temel amacı class ıcerısınde sadece belirlenen
+    methodların calısması veya belirlenen methodlar dısındakı tum methodların calısmasıdır
+
+    eger calısacak spesifik methodları belirtmek istersek inclusive
+    calısmayacak spesifik methodları belirtmek istersek exclusive keyword leri kullanırız
+    eger methodlar depends on method ıle bırbırıne baglanmıs ıse xml dosyası calısırken celıskı olmaması gerekır
+
+   -->
+    <test name="method">
+
+        <classes >
+
+            <class name="tests.day16_notations.C03_Priority">
+                <methods >
+                    <include name="amazontesti"></include>
+                </methods>
+            </class>
+
+            <class name="tests.day16_notations.C04_DependsOnMethods">
+                <methods >
+                    <exclude name="test03"></exclude>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

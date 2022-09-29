@@ -56,7 +56,7 @@ WebDriver driver ;
 
 
     }
-    @Test
+    @Test(groups = {"grup1", "grup2"})
     public void bagimsizTest() {
         System.out.println("bagimsiztest calisti");
 

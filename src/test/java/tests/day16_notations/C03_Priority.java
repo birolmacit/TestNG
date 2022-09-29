@@ -27,7 +27,7 @@ public class C03_Priority extends TestBase  {
     public void amazontesti() {
         driver .get("https://www.amazon.com");
     }
-    @Test (priority = -20)
+    @Test (priority = -20,groups = "grup1")
     public void bestbuytesti() {
         driver .get("https://www.bestbuy.com");
     }
